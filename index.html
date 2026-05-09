@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Zarbo's Closet 👽👕</title>
+    <style>
+        /* CSS Variables for easy color changes */
+        :root {
+            --bg-color: #f4f4f9; /* رمادي فاتح مريح للعين */
+            --text-color: #111;
+            --zarbo-green: #8bc34a; /* لون زربو الأخضر */
+            --btn-color: #ff9900; /* لون زر أمازون باش يجذب الكليكات */
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Profile Section */
+        .profile-container {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+        .profile-pic {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 4px solid var(--zarbo-green);
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .profile-container h1 {
+            margin: 15px 0 5px;
+            font-size: 22px;
+            font-weight: 800;
+        }
+        .profile-container p {
+            margin: 0;
+            color: #555;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        /* Products Section */
+        .links-container {
+            width: 100%;
+            max-width: 480px; /* باش يبقى مجموع وزوين فالتليفون */
+        }
+
+        /* Product Card */
+        .product-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 12px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .product-card:active {
+            transform: scale(0.97); /* تأثير الضغطة باش الكليان يحس بيها */
+        }
+
+        .product-image {
+            width: 85px;
+            height: 85px;
+            border-radius: 10px;
+            object-fit: cover;
+            background: #f0f0f0;
+            margin-right: 15px;
+        }
+
+        .product-info {
+            flex-grow: 1;
+        }
+        .product-title {
+            font-weight: 800;
+            font-size: 16px;
+            margin: 0 0 4px 0;
+        }
+        .product-subtitle {
+            font-size: 13px;
+            color: #777;
+            margin: 0 0 10px 0;
+        }
+        .buy-btn {
+            background-color: var(--btn-color);
+            color: #fff;
+            padding: 6px 14px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: bold;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Profile -->
+    <div class="profile-container">
+        <!-- حط الرابط ديال تصويرة زربو هنا -->
+        <img src="LINK_TO_ZARBO_PROFILE_PIC.jpg" alt="Zarbo" class="profile-pic">
+        <h1>Shop Zarbo's Closet 👽👕</h1>
+        <p>Official USA Store 🇺🇸 | As seen on TikTok</p>
+    </div>
+
+    <!-- Products List -->
+    <div class="links-container">
+        
+        <!-- Product 1: The Cable Manager -->
+        <a href="LINK_AMAZON_US_HERE" class="product-card">
+            <!-- حط الرابط ديال تصويرة التيشيرت هنا -->
+            <img src="LINK_TO_TSHIRT_1_MOCKUP.jpg" alt="The Cable Manager" class="product-image">
+            <div class="product-info">
+                <h2 class="product-title">The Cable Manager Tee 🔌</h2>
+                <p class="product-subtitle">"Don’t Touch My Organized Chaos"</p>
+                <span class="buy-btn">Buy on Amazon</span>
+            </div>
+        </a>
+
+        <!-- Product 2: The IKEA Expert -->
+        <a href="LINK_AMAZON_US_HERE" class="product-card">
+            <img src="LINK_TO_TSHIRT_2_MOCKUP.jpg" alt="The IKEA Expert" class="product-image">
+            <div class="product-info">
+                <h2 class="product-title">The IKEA Fail Tee 🪑</h2>
+                <p class="product-subtitle">"I Don't Need Instructions"</p>
+                <span class="buy-btn">Buy on Amazon</span>
+            </div>
+        </a>
+
+        <!-- Product 3: The Laundry Disaster -->
+        <a href="LINK_AMAZON_US_HERE" class="product-card">
+            <img src="LINK_TO_TSHIRT_3_MOCKUP.jpg" alt="The Laundry Disaster" class="product-image">
+            <div class="product-info">
+                <h2 class="product-title">The Laundry Fail Tee 🧺</h2>
+                <p class="product-subtitle">"Laundry Today Or Naked Tomorrow"</p>
+                <span class="buy-btn">Buy on Amazon</span>
+            </div>
+        </a>
+
+    </div>
+
+</body>
+</html>
